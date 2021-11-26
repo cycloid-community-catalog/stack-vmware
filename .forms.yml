@@ -17,7 +17,7 @@ vcenter-template:
         default: "((basic_auth_vsphere.password))"
         required: true
       - name: "vCenter server"
-        description: "vCenter server for Terraform."
+        description: "vCenter server (IP or FQDN) for Terraform. Ex: 192.168.0.1"
         key: vsphere_server
         widget: simple_text
         type: string
@@ -166,7 +166,7 @@ vcenter-iso:
         default: "((basic_auth_vsphere.password))"
         required: true
       - name: "vCenter server"
-        description: "vCenter server for Terraform."
+        description: "vCenter server (IP or FQDN) for Terraform. Ex: 192.168.0.1"
         key: vsphere_server
         widget: simple_text
         type: string
@@ -322,7 +322,7 @@ esxi-iso:
         default: "((basic_auth_vsphere.password))"
         required: true
       - name: "ESXi server"
-        description: "ESXi server for Terraform."
+        description: "ESXi server (IP or FQDN) for Terraform. Ex: 192.168.0.1"
         key: vsphere_server
         widget: simple_text
         type: string

@@ -48,23 +48,6 @@ resources:
       AWS_DEFAULT_REGION: ((aws_region))
       AWS_SECRET_ACCESS_KEY: ((aws_secret_key))
 
-# The Cycloid event resource to log events
-- name: cycloid-event
-  type: cycloid-events
-  source:
-    api_key: ((cycloid_api_key))
-    api_url: ((cycloid_api_url))
-    icon: fa-code-branch
-    organization: ((customer))
-    severity: info
-    type: Custom
-    tags:
-      - key: project
-        value: ((project))
-      - key: env
-        value: ((env))
-  icon: calendar
-
 # The Terraform stack (will be merged with the config)
 - name: git_stack-terraform
   type: git
